@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "BEM VINDO AO CrashARM MANAGER" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "BEM VINDO AO GÊNIO HACKER ARM" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
 echo ""
@@ -9,7 +9,7 @@ echo -ne "\033[1;36mINSTALAR? [N/S]: \033[1;37m"; read x
 [[ $x = @(n|N) ]] && exit
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
 service ssh restart  > /dev/null 2>&1
-wget https://raw.githubusercontent.com/betosshvip/crashvarm/main/Install/list > /dev/null 2>&1
+wget https://raw.githubusercontent.com/REDHAWKOG/OGENIOARM/main/Install/list > /dev/null 2>&1
 chmod +x list ./list > /dev/null 2>&1
 sleep 1s
 echo ""
@@ -78,12 +78,12 @@ rm CrashARM* > /dev/null 2>&1
 rm list* > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
-wget https://raw.githubusercontent.com/betosshvip/crashvarm/main/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/REDHAWKOG/OGENIOARM/main/versao > /dev/null 2>&1
 clear
 echo ""
 cd $HOME
 echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
 echo ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@CrashARM\033[0m"
+echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@OOGENIOHACKER\033[0m"
 rm -rf $HOME/CrashARM && cat /dev/null > ~/.bash_history && history -c
